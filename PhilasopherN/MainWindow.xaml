@@ -1,0 +1,44 @@
+﻿<Window x:Class="PhilasopherN.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PhilasopherN"
+        mc:Ignorable="d"
+        Title="@F_IVI_L" Height="350" Width="525"
+        Closing="Window_Closing">
+    <Grid Margin="10" x:Name="MainGrid" Loaded="Main_Loaded">
+            <Border x:Name="Backward" Width="100" Height="70" Padding="5" BorderBrush="Black" BorderThickness="0.5" VerticalAlignment="Top" HorizontalAlignment="Left" Background="Wheat" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect/>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Padding="0,5,0,0">Left side address</TextBlock>
+                    <TextBlock Padding="0,5,0,0" x:Name="LeftPort">Port:</TextBlock>
+                    <TextBlock x:Name="LeftStat">Not Connected</TextBlock>
+                </StackPanel>
+            </Border>
+            <Border x:Name="Forward" Width="108" Height="70" Padding="5" BorderBrush="Black" BorderThickness="0.5" VerticalAlignment="Top" HorizontalAlignment="Right" Background="Wheat" CornerRadius="10">
+                <Border.Effect>
+                    <DropShadowEffect/>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Padding="0,5,0,0">Right side address</TextBlock>
+                    <TextBlock Padding="0,5,0,0" x:Name="RightPort">Port:</TextBlock>
+                    <TextBlock x:Name="RightStat">Not Connected</TextBlock>
+                </StackPanel>
+            </Border>
+            <Image x:Name="PHil" Opacity="1" Source="./img/phil1.png" VerticalAlignment="Top" HorizontalAlignment="Center" Height="145" Margin="20"/>
+            <Image x:Name="PHi2" Opacity="0" Source="./img/phil2.png" VerticalAlignment="Top" HorizontalAlignment="Center" Height="145" Margin="20"/>
+            <Image x:Name="PHi3" Opacity="0" Source="./img/phil3.png" VerticalAlignment="Top" HorizontalAlignment="Center" Height="145" Margin="20"/>
+            <Image x:Name="PHi4" Opacity="0" Source="./img/phil4.png" VerticalAlignment="Top" HorizontalAlignment="Center" Height="145" Margin="20"/>
+            <Image x:Name="PHi5" Opacity="0" Source="./img/phil5.png" VerticalAlignment="Top" HorizontalAlignment="Center" Height="145" Margin="20"/>
+            <TextBlock x:Name="Name" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="15">Name: </TextBlock>
+            <Image  Opacity="0" x:Name="statuseat" Source="./img/pl.png" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="100" Margin="0,30"/>
+            <Image Opacity="0" x:Name="statuswait" Source="./img/fpl.png" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="100" Margin="0,30"/>
+            <Image Opacity="1" x:Name="statusthink" Source="./img/book.png" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="100" Margin="0,30"/>
+            <!--<Image x:Name="Lfork" Source="./img/fork.png" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="80" Margin="149,0,271,40.5"/>-->
+            <!--<Image x:Name="Rfork" Source="./img/fork.png" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="80" Margin="268,0,152,40.5"/>-->
+            <TextBlock x:Name="Statustxt" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="18">Thinking</TextBlock>
+        </Grid>
+</Window>
